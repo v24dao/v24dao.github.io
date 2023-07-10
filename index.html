@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Itinery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Hero -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/whitelogo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <!-- Adding id is for JS events -->
+            <!-- Closing tag -->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <!-- onclick JS event -->
+            <ul>
+                <li><a href="index.html#about-budapest">ABOUT</a></li>
+                <li><a href="index.html#sights">SIGHTS</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="#transport">TRANSPORT</a></li>
+                <li><a href="#hotel">HOTEL</a></li>
+                <li><a href="food.html">FOOD</a></li>
+            </ul>
+        </div>
+        <!-- Opening tag -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>BUDAPEST ITINERARY</h1>
+        <p>Information about your trip to Hungary's capital can be found below. <br> We hope you have an amazing time!</p>  
+        <div class="btns">
+            <a href="#about-budapest" class="btn btn-3">LEARN MORE</a>
+            <a href="flights.html" class="btn btn-2">BOARD FLIGHT</a>
+        </div>
+        
+    </div>
+    </section>
+
+    <!-- About Budapest -->
+    <section class="about-budapest" id="about-budapest">
+        <div class="section-head"> <h1>THE CITY WITH TWO FACES&nbsp;<i class="fa-solid fa-masks-theater"></i></h1>
+            <p class="sub-head">The center of Budapest beats with the unifying pulse of the iconic Chain Bridge, seamlessly connecting the historic Buda side with its architectural wonders and the bustling Pest side with its vibrant urban culture.</p>
+    </div>
+       
+        <div class="row">
+            <div class="about-budapest-col">
+                <img src="images/budaside.jpg" loading="lazy" alt="">
+                <div class="overlay ">
+                    <a href=""><h2>BUDA</h2></a>
+                </div>
+                
+            </div>
+            <div class="about-budapest-col">
+                <img src="images/chainbridge.png" loading="lazy" alt="">
+                <div class="overlay overlay-2">
+                    <a href=""><h2>CHAIN BRIDGE</h2></a>
+                </div>
+            </div>
+            <div class="about-budapest-col">
+                <img src="images/pestside.jpg" loading="lazy" alt="">
+                <div class="overlay overlay-3">
+                    <a href=""><h2>PEST</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <h3><i class="fa-solid fa-location-dot"></i> : Budapest, the capital of Hungary, is situated in the heart of Central Europe and bordered by Austria, Romania and Croatia.</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345148.26221521664!2d18.800671748696708!3d47.48074111960953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest%2C%20Hungary!5e0!3m2!1sen!2suk!4v1687806707369!5m2!1sen!2suk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+<!-- Sights -->
+
+
+<section class="sights" id="sights">
+
+        <div class="section-head">
+            <h1>SIGHTS &nbsp;<i class="fa-solid fa-mountain-sun"></i></h1>
+        </div>
+
+    <div class="grid grid--3">
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/matthias.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">MATTHIAS CHURCH</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/bastian.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">FISHERMAN'S BASTIAN</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/gellerthill.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">GELLERT HILL</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/basilica.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">ST STEPHEN'S BASILICA</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/parliament.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">HUNGARIAN PARLIAMENT</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/citypark.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">HEROES SQUARE & CITY PARK</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ----JS ---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+
+    </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Itinery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Hero -->
+    <section class="header-alt">
+      <nav>
+        <a href="index.html"><img src="images/whitelogo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <!-- Adding id is for JS events -->
+            <!-- Closing tag -->
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <!-- onclick JS event -->
+            <ul>
+                <li><a href="index.html#about-budapest">ABOUT</a></li>
+                <li><a href="index.html#sights">SIGHTS</a></li>
+                <li><a href="flights.html">FLIGHTS</a></li>
+                <li><a href="#transport">TRANSPORT</a></li>
+                <li><a href="#hotel">HOTEL</a></li>
+                <li><a href="food.html">FOOD</a></li>
+            </ul>
+        </div>
+        <!-- Opening tag -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+    </section>
+
+   
+
+
+    <section class="sights" id="sights">
+
+        <div class="section-head">
+            <h1>FOOD &nbsp;<i class="fa-sharp fa-solid fa-utensils"></i></h1>
+        </div>
+
+    <div class="grid grid--3">
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/langos.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">LANGOS</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/chimneycake.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">CHIMNEY CAKE</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/goulash.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">GOULASH</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/applestrudel.png" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">APPLE STRUDEL</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/chickenpaprikash.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">CHICKEN PAPRIKASH</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="card">
+                <img class="card-img" loading="lazy" src="/images/stuffedcabbage.jpg" alt="">
+                <div class="card-content">
+                    <h1 class="card-header">STUFFED CABBAGE</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- ----JS ---- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-400px";
+        }
+
+    </script>
+   
+
+</body>
+</html>
